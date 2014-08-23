@@ -62,6 +62,7 @@
   <call name="carenet_generic_list" method="GET" url="/carenets/{CARENET_ID}/reports/{DATA_MODEL}/" />
   <call name="coding_systems_list" method="GET" url="/codes/systems/" />
   <call name="coding_system_query" method="GET" url="/codes/systems/{SYSTEM_SHORT_NAME}/query" />
+  <call name="download_file" method="GET" url="/download/{UID}/{FILE_NAME}" />
   <call name="smart_manifest" method="GET" url="/manifest" />
   <call name="exchange_token" method="POST" url="/oauth/access_token" />
   <call name="request_token_approve" method="POST" url="/oauth/internal/request_tokens/{REQTOKEN_ID}/approve" />
@@ -140,11 +141,19 @@
   <call name="record_set_owner" method="PUT" url="/records/{RECORD_ID}/owner" />
   <call name="report_ccr" method="GET" url="/records/{RECORD_ID}/reports/experimental/ccr" />
   <call name="generic_list" method="GET" url="/records/{RECORD_ID}/reports/{DATA_MODEL}/" />
+  <call name="generic_list_count" method="GET" url="/records/{RECORD_ID}/reports/{DATA_MODEL}/count/" />
   <call name="record_shares" method="GET" url="/records/{RECORD_ID}/shares/" />
   <call name="record_share_add" method="POST" url="/records/{RECORD_ID}/shares/" />
   <call name="record_share_delete" method="DELETE" url="/records/{RECORD_ID}/shares/{OTHER_ACCOUNT_ID}" />
   <call name="record_share_delete" method="POST" url="/records/{RECORD_ID}/shares/{OTHER_ACCOUNT_ID}/delete" />
   <call name="smart_generic" method="GET" url="/records/{RECORD_ID}/{MODEL_NAME}/" />
   <call name="smart_generic_instance" method="GET" url="/records/{RECORD_ID}/{MODEL_NAME}/{MODEL_ID}" />
+  <call name="upload_file" method="POST" url="/upload/{RECORD_ID}/file" />
   <call name="get_version" method="GET" url="/version" />
+  <call name="vocabulary_list" method="GET" url="/vocabularies/" />
+  <call name="vocabulary_meta" method="GET" url="/vocabularies/{VOCABULARY_ID}" />
+  <call name="vocabulary_query" method="GET" url="/vocabularies/{VOCABULARY_ID}/" />
+  <call name="vocabulary_term_meta" method="GET" url="/vocabularies/{VOCABULARY_ID}/{TERM_ID}" />
+  <call name="widget_process" method="GET" url="/widget/process/" />
+  <call name="widget_process" method="POST" url="/widget/process/" />
 </api>
