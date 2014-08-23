@@ -1286,6 +1286,12 @@ and more.
         """Do the actual request using the connection object
         and also follow one level of redirects if necessary"""
 
+        request_uri = request_uri.encode('utf-8')
+        if isinstance(body, basestring):
+            body = body.encode('utf-8')
+        for key, value in headers.iteritems():
+            headers[key] = value.encode('utf-8')
+
         auths = [(auth.depth(request_uri), auth) for auth in self.authorizations if auth.inscope(host, request_uri)]
         auth = auths and sorted(auths)[0][1] or None
         if auth:
