@@ -60,6 +60,7 @@
   <call name="carenet_record" method="GET" url="/carenets/{CARENET_ID}/record" />
   <call name="carenet_rename" method="POST" url="/carenets/{CARENET_ID}/rename" />
   <call name="carenet_generic_list" method="GET" url="/carenets/{CARENET_ID}/reports/{DATA_MODEL}/" />
+  <call name="carenet_generic_instance" method="GET" url="/carenets/{CARENET_ID}/reports/{DATA_MODEL}/{FACT_ID}" />
   <call name="coding_systems_list" method="GET" url="/codes/systems/" />
   <call name="coding_system_query" method="GET" url="/codes/systems/{SYSTEM_SHORT_NAME}/query" />
   <call name="download_file" method="GET" url="/download/{UID}/{FILE_NAME}" />
@@ -142,6 +143,7 @@
   <call name="report_ccr" method="GET" url="/records/{RECORD_ID}/reports/experimental/ccr" />
   <call name="generic_list" method="GET" url="/records/{RECORD_ID}/reports/{DATA_MODEL}/" />
   <call name="generic_list_count" method="GET" url="/records/{RECORD_ID}/reports/{DATA_MODEL}/count/" />
+  <call name="generic_instance" method="GET" url="/records/{RECORD_ID}/reports/{DATA_MODEL}/{FACT_ID}" />
   <call name="record_shares" method="GET" url="/records/{RECORD_ID}/shares/" />
   <call name="record_share_add" method="POST" url="/records/{RECORD_ID}/shares/" />
   <call name="record_share_delete" method="DELETE" url="/records/{RECORD_ID}/shares/{OTHER_ACCOUNT_ID}" />
