@@ -114,6 +114,7 @@
   <call name="record_document_label_ext" method="PUT" url="/records/{RECORD_ID}/documents/external/{PHA_EMAIL}/{EXTERNAL_ID}/label" />
   <call name="record_document_meta_ext" method="GET" url="/records/{RECORD_ID}/documents/external/{PHA_EMAIL}/{EXTERNAL_ID}/meta" />
   <call name="document_rels" method="PUT" url="/records/{RECORD_ID}/documents/{DOCUMENT_ID_0}/rels/{REL}/{DOCUMENT_ID_1}" />
+  <call name="record_specific_document" method="GET" url="/records/{RECORD_ID}/documents/{DOCUMENT_ID}" />
   <call name="record_document" method="GET" url="/records/{RECORD_ID}/documents/{DOCUMENT_ID}" />
   <call name="document_carenets" method="GET" url="/records/{RECORD_ID}/documents/{DOCUMENT_ID}/carenets/" />
   <call name="carenet_document_delete" method="DELETE" url="/records/{RECORD_ID}/documents/{DOCUMENT_ID}/carenets/{CARENET_ID}" />
